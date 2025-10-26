@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { CounterContext } from "../Context/CounterContex"
+import { CounterContext } from "../Context/CounterContext"
 
 export default function Btn(){
     const {Increment} = useContext(CounterContext)
@@ -7,8 +7,7 @@ export default function Btn(){
         <div>
 
             <button onClick={Increment}>Increment</button>
-            <button>Reset</button>
-            <button>decrement</button>
+            
         </div>
     
     )
